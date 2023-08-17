@@ -89,6 +89,12 @@ nav ul li:hover::after{
     transform: scale(1);
     transform-origin: left;
 } */
+.menu{
+    display: none;
+}
+.socialMedia2{
+    display: none;
+}
 
 section{
     position: relative;
@@ -130,6 +136,8 @@ main section{
 
 
 }
+
+
 
 main section h1{
     color: #24f0b6ff;
@@ -176,3 +184,188 @@ button:hover
     border-left: 0px solid rgba(27, 196, 20, 20);
     border-right: 0px solid rgba(27, 196, 20, 20);
 }
+
+
+@media(max-width:900px)
+{
+  
+    .socialMedia2{
+        position: absolute;
+        bottom: 10px;
+        left: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 40%;
+
+    }
+
+    section{
+        position: relative;
+        display: none;
+       
+    }
+
+    .socialMedia2 p{
+
+        display: none;
+    }
+    
+    .socialMedia2 img{
+        position: relative;
+        bottom: 50px;
+    
+    
+    }
+    
+    .socialMedia2 img:hover{
+        cursor: pointer;
+    
+    }
+
+    header #logo {
+        position: relative;
+        right: 5%;
+        margin-left: 10px;
+    
+    }
+
+    nav {
+        position: relative;
+        left: 5%;
+    }  
+ 
+          
+}
+
+
+@media(max-width:850px)
+{
+    main section h1{
+        font-size: 40px;
+       
+    }
+
+}
+
+@media(max-width:700px)
+{
+    .menu{
+        position: relative;
+        left: 20%;
+        right: 5%;
+        display: flex;
+        cursor: pointer;
+        transition: transform 0.5s ;
+    }
+    .menu.active{
+        transform: rotate(-90deg);
+    }
+
+    .menuActive {
+      display: none;
+    }
+
+    .menuActive.active{
+        position: absolute;
+        top: 100%;
+        left: 75%;
+        right: 5%;
+        width: 150px;
+        height: auto;
+        display: block;
+        background: linear-gradient(135deg, rgba(156, 219, 153, 0.20), rgba(156, 219, 153,0));
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(3px);
+        border: 1px solid rgba(156, 219, 153, 0.18);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.60);
+        cursor: pointer;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        z-index: 4;
+        
+
+    }
+
+    .menuActive.active ul {
+        position: relative;
+        display: block;
+
+    }
+
+    .menuActive.active ul li{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: 15px;
+        margin-top: 15px;
+        width: 100%;
+        height: 20px;
+        cursor: pointer;
+        transition: 0.2s;
+    }
+
+    .menuActive.active ul li:hover{
+        background: linear-gradient(135deg, rgba(57, 61, 57, 0.2), rgba(156, 219, 153,0));
+        backdrop-filter: blur(2px);
+        -webkit-backdrop-filter: blur(2px);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.60);
+        border-radius: 5px;
+    }
+
+    header #logo {
+       
+        right: 10%;
+    
+    }
+    title.active{
+        position: relative;
+
+    }
+
+    main section h1{
+        font-size: 35px;
+       
+    }
+
+  
+    
+
+
+}
+
+@media(max-width:700px)
+{
+    .menuActive.active{
+
+        left: 70%;
+
+    }
+
+
+    header #logo {
+        position: relative;
+        margin-left: 5px;
+        right: 20%;
+        margin-left: 10px;
+    
+    }
+
+    main section h1{
+        font-size: 25px;
+    }
+    
+    main section p{
+        position: relative;
+        bottom: 20px;
+        color: #ffff;
+        font-weight: 10px;
+        font-family: Calibri;
+        
+    }
+
+
+}
+
+
